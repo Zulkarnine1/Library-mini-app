@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book</title>
+</head>
+<body>
+    <form action="/edit/{{book.id}}" method="POST">
+        <label>Book Name</label>
+        <input type="text" name="name" value="{{book.title}}">
+        <label>Book Author</label>
+        <input type="text" name="author" value="{{book.author}}">
+        <label>Rating</label>
+        <input type="number" min="1" max="10" name="rating" value="{{book.rating}}" >
+        <button type="submit">Edit Book</button>
+    </form>
+</body>
+</html>
